@@ -28,9 +28,18 @@ const Home = () => {
           alignItems={'center'}
           spacing={['16', '56']}
         >
-          <VStack width={'full'} alignItems={['center', 'flex-end']}>
+          <VStack
+            width={'full'}
+            alignItems={['center', 'flex-end']}
+            spacing={'8'}
+          >
             <Heading children="Welcome to Streamway" size={'2xl'} />
-            <Text children="Streamway is a platform for streaming your favorite movies and TV shows." />
+            <Text
+              size={'2xl'}
+              fontFamily={'cursive'}
+              textAlign={['center', 'left']}
+              children="Streamway is a platform for streaming your favorite movies and TV shows."
+            />
             <Link href="/courses">
               <Button size={'lg'} colorScheme="green">
                 Explore Courses
@@ -69,7 +78,7 @@ const Home = () => {
 
       <div className="container2">
         <video
-          autoPlay
+          // autoPlay
           controls
           src={introVideo}
           controlsList="nodownload nofullscreen noremoteplayback"
